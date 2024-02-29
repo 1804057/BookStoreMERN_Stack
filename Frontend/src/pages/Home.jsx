@@ -16,6 +16,7 @@ const Home = () => {
       .get("https://book-store-mern-stack-backend-dun.vercel.app/books")
       .then((response) => {
         setBooks(response.data.data);
+        console.log("Hello",books);
         setLoading(false);
       })
       .catch((error) => {
