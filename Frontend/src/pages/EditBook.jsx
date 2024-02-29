@@ -40,7 +40,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`book-store-mern-stack-backend-dun.vercel.app/books/${id}`, data)
+      .put(`https://book-store-mern-stack-backend-dun.vercel.app/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited successfully", { variant: "success" });
