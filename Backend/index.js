@@ -10,7 +10,7 @@ app.use(express.json());
 // app.use(cors());
 app.use(
   cors({
-    origin: 'book-store-mern-stack-api.vercel.app',
+    origin: 'https://book-store-mern-stack-api.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
   })
